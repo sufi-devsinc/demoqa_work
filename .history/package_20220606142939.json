@@ -1,0 +1,16 @@
+{
+  "name": "demoqa.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Widgets_Accordance": "npx playwright test Demoqas.spec.js --grep @WidgetsAccordance ",
+    "Auto_Complete":"npx playwright test Demoqas.spec.js --grep @AutoComplete"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.22.2"
+  }
+}
