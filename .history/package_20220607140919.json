@@ -8,7 +8,7 @@
     "Auto_Complete":"npx playwright test Demoqas.spec.js --grep @AutoComplete",
     "datePicker": "npx playwright test Demoqas.spec.js --grep @DatePicker",
     "Slider":"npx playwright test Demoqas.spec.js --grep @Slider",
-    "Tabs":"npx playwright test Demoqas.spec.js --grep @Tabs"
+    "Tabs":"npx playwright test Demoqas.spec.js --"
   },
   "keywords": [],
   "author": "",

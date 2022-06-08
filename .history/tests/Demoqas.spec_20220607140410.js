@@ -50,9 +50,6 @@ test.describe('demoqa tests', async () => {
     })
     test(`@Tabs Widgets with tabs`, async() => {
         const Widget_5 = new Widgets(page);
-        await Widget_5.initialize();
-        await page.pause();
-        await Widget_5.Tabs();
     })
 
 });

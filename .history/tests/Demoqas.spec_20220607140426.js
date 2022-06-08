@@ -52,7 +52,7 @@ test.describe('demoqa tests', async () => {
         const Widget_5 = new Widgets(page);
         await Widget_5.initialize();
         await page.pause();
-        await Widget_5.Tabs();
+        await Widget_5.Slider();
     })
 
 });

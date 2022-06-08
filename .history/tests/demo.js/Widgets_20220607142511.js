@@ -61,13 +61,9 @@ exports.Widgets = class Widget {
     }
     async Tabs(){
         await this.page.locator('li:has-text("Tabs")').click();
-        for (let i = 0; i < 100; i++) {
         await this.page.locator('#demo-tabpane-what').click();
-        // await expect(this.page.locator('text=Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem')).toHaveText('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum');   
-        await this.page.locator('#demo-tab-origin').click();
-        await this.page.locator('#demo-tab-use').click();
-        // await this.page.locator('#demo-tab-more').click();
-        }
+        await expect(this.page.locator('#demo-tabpane-what')).click('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum');   
+
     }
     async Tools_Tips(){
 
