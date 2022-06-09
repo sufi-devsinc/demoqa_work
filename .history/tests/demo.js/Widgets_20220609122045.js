@@ -98,7 +98,7 @@ exports.Widgets = class Widget {
             modifiers: ['Control']
         });
 
-    async Menu_1() {
+    async Menu() {
         await this.page.locator('li:has-text("Select Menu")').click();
         await expect(this.page.locator('#selectMenuContainer > div:nth-child(1)')).toHaveText('Select Value');
         await this.page.locator('#withOptGroup > div > div.css-1hwfws3').click();

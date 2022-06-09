@@ -1,0 +1,7 @@
+1. git init 
+2. git status
+3. git add .
+4. git commit -m "Comment"
+4. git push origin master
+5. $ git checkout master
+6. git log
