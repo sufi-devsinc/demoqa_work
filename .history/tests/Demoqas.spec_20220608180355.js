@@ -55,11 +55,9 @@ test.describe('demoqa tests', async () => {
         await Widget_5.Tabs();
     })
     test(`@Menu Widgets with menu`, async () => {
-        const Widget_6 = new Widgets(page);
-        await Widget_6.initialize();
-        await page.pause()
-        await Widget_6.Menu();
+
     })
 
+    }
 
 });

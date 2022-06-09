@@ -98,34 +98,7 @@ exports.Widgets = class Widget {
             modifiers: ['Control']
         });
 
-    async Menu_1() {
-        await this.page.locator('li:has-text("Select Menu")').click();
-        await expect(this.page.locator('#selectMenuContainer > div:nth-child(1)')).toHaveText('Select Value');
-        await this.page.locator('#withOptGroup > div > div.css-1hwfws3').click();
-        await this.page.locator('#react-select-2-option-0-1').click();
-        await this.page.locator('#withOptGroup div:has-text("Group 1, option 2")').nth(1).click();
-        await this.page.locator('#react-select-2-option-1-1').click();
-        await this.page.locator('#withOptGroup div:has-text("Group 2, option 2")').nth(1).click();
-        await this.page.locator('#withOptGroup svg').click();
-        await this.page.locator('#selectOne div:has-text("Select Title")').nth(1).click();
-        await this.page.locator('#react-select-3-option-0-3').click();
-        await this.page.locator('#selectOne div:has-text("Ms.")').nth(1).click();
-        await this.page.locator('#react-select-3-option-0-1').click();
-        await this.page.locator('#oldSelectMenu').selectOption('7');
-        await this.page.locator('#oldSelectMenu').selectOption('4');
-        await this.page.locator('div:nth-child(7) > .col-md-6 > .css-2b097c-container > .css-yk16xz-control > .css-1hwfws3').click();
-        await this.page.locator('#react-select-4-option-2').click();
-        await this.page.locator('#react-select-4-option-1').click();
-        await this.page.locator('#react-select-4-option-0').click();
-        await this.page.locator('#react-select-4-option-3').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click({
-            modifiers: ['Control']
-        });
-        
+
 
 
     }

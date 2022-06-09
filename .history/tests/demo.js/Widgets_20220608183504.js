@@ -79,53 +79,44 @@ exports.Widgets = class Widget {
         await this.page.locator('#react-select-2-option-1-1').click();
         await this.page.locator('#withOptGroup div:has-text("Group 2, option 2")').nth(1).click();
         await this.page.locator('#withOptGroup svg').click();
-        await this.page.locator('#selectOne div:has-text("Select Title")').nth(1).click();
-        await this.page.locator('#react-select-3-option-0-3').click();
-        await this.page.locator('#selectOne div:has-text("Ms.")').nth(1).click();
-        await this.page.locator('#react-select-3-option-0-1').click();
-        await this.page.locator('#oldSelectMenu').selectOption('7');
-        await this.page.locator('#oldSelectMenu').selectOption('4');
-        await this.page.locator('div:nth-child(7) > .col-md-6 > .css-2b097c-container > .css-yk16xz-control > .css-1hwfws3').click();
-        await this.page.locator('#react-select-4-option-2').click();
-        await this.page.locator('#react-select-4-option-1').click();
-        await this.page.locator('#react-select-4-option-0').click();
-        await this.page.locator('#react-select-4-option-3').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click({
+        await page.locator('#react-select-2-option-3').click();
+        await page.locator('#withOptGroup div:has-text("Another root option")').nth(1).click();
+        await page.locator('#react-select-2-option-2').click();
+        await page.locator('#selectOne div:has-text("Select Title")').nth(1).click();
+        // Click #react-select-3-option-0-3
+        await page.locator('#react-select-3-option-0-3').click();
+        // Click #selectOne div:has-text("Ms.") >> nth=1
+        await page.locator('#selectOne div:has-text("Ms.")').nth(1).click();
+        // Click #react-select-3-option-0-1
+        await page.locator('#react-select-3-option-0-1').click();
+        // Select 7
+        await page.locator('#oldSelectMenu').selectOption('7');
+        // Select 4
+        await page.locator('#oldSelectMenu').selectOption('4');
+        // Click div:nth-child(7) > .col-md-6 > .css-2b097c-container > .css-yk16xz-control > .css-1hwfws3
+        await page.locator('div:nth-child(7) > .col-md-6 > .css-2b097c-container > .css-yk16xz-control > .css-1hwfws3').click();
+        // Click #react-select-4-option-2
+        await page.locator('#react-select-4-option-2').click();
+        // Click #react-select-4-option-1
+        await page.locator('#react-select-4-option-1').click();
+        // Click #react-select-4-option-0
+        await page.locator('#react-select-4-option-0').click();
+        // Click #react-select-4-option-3
+        await page.locator('#react-select-4-option-3').click();
+        // Click select[name="cars"]
+        await page.locator('select[name="cars"]').click();
+        // Click select[name="cars"]
+        await page.locator('select[name="cars"]').click();
+        // Click select[name="cars"]
+        await page.locator('select[name="cars"]').click();
+        // Click select[name="cars"]
+        await page.locator('select[name="cars"]').click();
+        // Click select[name="cars"]
+        await page.locator('select[name="cars"]').click({
             modifiers: ['Control']
         });
 
-    async Menu_1() {
-        await this.page.locator('li:has-text("Select Menu")').click();
-        await expect(this.page.locator('#selectMenuContainer > div:nth-child(1)')).toHaveText('Select Value');
-        await this.page.locator('#withOptGroup > div > div.css-1hwfws3').click();
-        await this.page.locator('#react-select-2-option-0-1').click();
-        await this.page.locator('#withOptGroup div:has-text("Group 1, option 2")').nth(1).click();
-        await this.page.locator('#react-select-2-option-1-1').click();
-        await this.page.locator('#withOptGroup div:has-text("Group 2, option 2")').nth(1).click();
-        await this.page.locator('#withOptGroup svg').click();
-        await this.page.locator('#selectOne div:has-text("Select Title")').nth(1).click();
-        await this.page.locator('#react-select-3-option-0-3').click();
-        await this.page.locator('#selectOne div:has-text("Ms.")').nth(1).click();
-        await this.page.locator('#react-select-3-option-0-1').click();
-        await this.page.locator('#oldSelectMenu').selectOption('7');
-        await this.page.locator('#oldSelectMenu').selectOption('4');
-        await this.page.locator('div:nth-child(7) > .col-md-6 > .css-2b097c-container > .css-yk16xz-control > .css-1hwfws3').click();
-        await this.page.locator('#react-select-4-option-2').click();
-        await this.page.locator('#react-select-4-option-1').click();
-        await this.page.locator('#react-select-4-option-0').click();
-        await this.page.locator('#react-select-4-option-3').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click();
-        await this.page.locator('select[name="cars"]').click({
-            modifiers: ['Control']
-        });
-        
+
 
 
     }

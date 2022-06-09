@@ -9,7 +9,7 @@
     "datePicker": "npx playwright test Demoqas.spec.js --grep @DatePicker",
     "Slider":"npx playwright test Demoqas.spec.js --grep @Slider",
     "Tabs":"npx playwright test Demoqas.spec.js --grep @Tabs",
-    "Menu":"npx playwright test Demoqas.spec.js --grep @Menu"
+    "":""
   },
   "keywords": [],
   "author": "",
