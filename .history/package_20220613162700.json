@@ -1,0 +1,23 @@
+{
+  "name": "demoqa.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Widgets_Accordance": "npx playwright test Demoqas.spec.js --grep @WidgetsAccordance ",
+    "Auto_Complete":"npx playwright test Demoqas.spec.js --grep @AutoComplete",
+    "datePicker": "npx playwright test Demoqas.spec.js --grep @DatePicker",
+    "Slider":"npx playwright test Demoqas.spec.js --grep @Slider",
+    "Tabs":"npx playwright test Demoqas.spec.js --grep @Tabs",
+    "Menu":"npx playwright test Demoqas.spec.js --grep @Menu",
+    "Selectable": "npx playwright test Demoqas.spec.js --grep @Selectable",
+    "ToolSQA":"npx playwright test Demoqas.spec.js --grep @ToolSQA",
+    "Login":"npx playwright test Demoqas.spec.js --grep"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.22.2"
+  }
+}

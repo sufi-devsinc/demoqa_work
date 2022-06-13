@@ -5,3 +5,31 @@
 4. git push origin master
 5. $ git checkout master
 6. git log
+
+github notes:
+1. first create the new branch in the local machine:
+1. git checkout -b 102-dropdown-menu
+
+2. open vs-code
+2. code . 
+
+3. check the status
+3. git status
+
+4. add the commit to the branch
+4. git add .
+
+5. git commit -m "sufi/101:	dropdown menu"
+ 
+6. git log --oneline // oneline is used to check the branch is merged with the master branch or not 
+7. first push the code to the github online 
+7.1. go to the github and take the pull request 
+7.2. then check if there is any update needed then change it or after that move to the new branch and merged it with the master branch 
+7.3. go to the local machine and move forward
+
+8. git checkout master // move to the master branch 
+
+9. git pull origin master 
+
+10. git log --online // the new branch is merged with the master 
+
