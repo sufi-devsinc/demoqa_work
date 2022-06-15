@@ -71,7 +71,6 @@ test.describe('demoqa tests', async () => {
     test (`@ToolSQA bookstore with toolSqa`, async ()=> {
         const mainpage_1 = new main_pages(page);
         await mainpage_1.initialize();
-        await page.pause();
         await mainpage_1.ToolSQA();
         await mainpage_1.Login();
         await mainpage_1.Login_credits();
